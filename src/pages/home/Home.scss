@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  gap: var(--1m);
   nav{
     position: fixed;
     top: 0;
@@ -15,7 +14,38 @@
     .logo{
       p{
         mix-blend-mode: difference;
+        color: var(--gray-300);
       }
+    }
+  }
+  .hero{
+    padding: 256px var(--3m) 256px var(--3m);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--3m);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    background: var(--white);
+    position: relative;
+    border-radius: 0 0 40px 40px;
+  }
+  .grabZone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--1m);
+    z-index: 1;
+    width: 100%;
+    .pillule{
+      cursor: grab;
+      width: var(--10m);
+      height: var(--1m);
+      border-radius: 8px;
+      background: var(--white);
     }
   }
 }
