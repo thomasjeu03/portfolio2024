@@ -32,34 +32,7 @@ function HomePage() {
                 <div className="pillule"></div>
             </div>
             <div className='dflexcolumn gap256 maxWidth1024' style={{ padding: '256px 16px' }}>
-                <h2 className='titre1 dflexrow w100 wrap' style={{ columnGap: '20px' }}>
-                    <span className='gray-200'>You</span>
-                    <span className='gray-200'>have</span>
-                    <span className='gray-200'>an</span>
-                    <span className='white'>idea</span>
-                    <span className='gray-200'>to</span>
-                    <span className='text-gradient'>highlight</span>
-                    <span className='gray-200'>,</span>
-                    <span className='gray-200'>a</span>
-                    <span className='gray-200'>new</span>
-                    <span className='white'>web</span>
-                    <span className='white'>application</span>
-                    <span className='gray-200'>to</span>
-                    <span className='gray-200'>design</span>
-                    <span className='gray-200'>and</span>
-                    <span className='gray-200'>develop</span>
-                    <span className='gray-200'>,</span>
-                    <span className='gray-200'>a</span>
-                    <span className='white'>UX/UI</span>
-                    <span className='white'>system</span>
-                    <span className='gray-200'>to</span>
-                    <span className='gray-200'>implement</span>
-                    <span className='gray-200'>or</span>
-                    <span className='gray-200'>just</span>
-                    <span className='gray-200'>a</span>
-                    <span className='white'>designer</span>
-                    <span className='white'>portfolio</span>
-                </h2>
+                <h2 className='titre1 gray-200 w100 whitespace'>You have an <span className='white'>idea</span> to <span className='text-gradient'>highlight</span>, a new <span className='white'>web</span> <span className='white'>application</span> to design and develop, a <span className='white'>UX/UI</span> <span className='white'>system</span> to implement or just a <span className='white'>designer</span> <span className='white'>portfolio</span></h2>
                 <h3 className='titre2 dflexrow w100 gap16 nowrap gray-200'>
                     <GalleryVerticalEnd size={48} className='gray-200'/>
                     Keep scrolling...
