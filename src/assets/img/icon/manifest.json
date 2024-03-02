@@ -1,0 +1,38 @@
+{
+    "background_color": "#f9f9f9 ",
+    "categories": [
+        "ruche",
+        "abeilles",
+        "apiculteurs",
+        "miel",
+        "Franche-Comté",
+        "essaims",
+        "reines"
+    ],
+    "id": "/?source=pwa",
+    "start_url": "/?source=pwa",
+    "name": "Abeilles & Cîmes",
+    "description": "Explorez le monde des abeilles avec Abeilles et Cîmes. Produits de la ruche, reines et essaims de qualité en Franche-Comté. Apiculteur passionné et producteur de miel.",
+    "scope": "/",
+    "short_name": "Abeilles & Cîmes",
+    "icons": [
+        {
+            "src": "android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#f9b73e",
+    "orientation": "any",
+    "display_override": [
+        "fullscreen",
+        "minimal-ui",
+        "window-controls-overlay"
+    ],
+    "display": "standalone"
+}

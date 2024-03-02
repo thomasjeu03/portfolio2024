@@ -1,0 +1,21 @@
+.HomePage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: var(--1m);
+  nav{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 1000;
+    .logo{
+      p{
+        mix-blend-mode: difference;
+      }
+    }
+  }
+}
