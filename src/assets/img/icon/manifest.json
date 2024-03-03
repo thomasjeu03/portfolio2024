@@ -1,33 +1,31 @@
 {
-    "background_color": "#f9f9f9 ",
+    "background_color": "#0E0E12 ",
     "categories": [
-        "ruche",
-        "abeilles",
-        "apiculteurs",
-        "miel",
-        "Franche-Comté",
-        "essaims",
-        "reines"
+        "webapp",
+        "productivity",
+        "design",
+        "development",
+        "SaaS",
+        "web",
+        "Landing page",
+        "portoflio",
+        "Thomas Jeu",
+        "design system"
     ],
     "id": "/?source=pwa",
     "start_url": "/?source=pwa",
-    "name": "Abeilles & Cîmes",
-    "description": "Explorez le monde des abeilles avec Abeilles et Cîmes. Produits de la ruche, reines et essaims de qualité en Franche-Comté. Apiculteur passionné et producteur de miel.",
+    "description": "Unlock your online potential. I’m Thomas Jeu, next gen creative web app developer. Elevate your brand with meticulously crafted web experiences",
     "scope": "/",
-    "short_name": "Abeilles & Cîmes",
+    "name": "Thomas Jeu",
+    "short_name": "Thomas Jeu",
     "icons": [
         {
-            "src": "android-chrome-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "android-chrome-512x512.png",
-            "sizes": "512x512",
+            "src": "android-chrome-72x72.png",
+            "sizes": "72x72",
             "type": "image/png"
         }
     ],
-    "theme_color": "#f9b73e",
+    "theme_color": "#bb6bfc",
     "orientation": "any",
     "display_override": [
         "fullscreen",

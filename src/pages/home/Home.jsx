@@ -2,14 +2,15 @@ import './Home.scss';
 import {memo} from "react";
 import { GalleryVerticalEnd, Component } from 'lucide-react';
 import Hero from "./hero.jsx";
+import logo from "../../assets/img/icon/favicon.png";
 
 function HomePage() {
     return (
         <div className="HomePage">
             <nav className="maxWidth1400 dflexrow gapBetween p16">
-                <div className='dflexrow gap4 logo'>
+                <div className='dflexrow gap8 logo'>
                     {/*TODO: find a logo*/}
-                    <Component size={36} className='secondary' />
+                    <img src={logo} alt="Thomas Jeu" height={40}/>
                     <p className='title-font regular18'>Thomas Jeu</p>
                 </div>
                 <a href='https://cal.com/thomas-jeu/cal-15'
