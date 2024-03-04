@@ -7,8 +7,7 @@
   nav{
     position: fixed;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: auto;
     width: 100%;
     z-index: 1000;
     .logo{
@@ -23,6 +22,7 @@
     width: 100%;
     display: flex;
     align-items: center;
+    overflow: hidden;
     flex-direction: column;
     gap: var(--3m);
     background-repeat: no-repeat;
@@ -32,6 +32,9 @@
     background: var(--white);
     position: relative;
     border-radius: 0 0 40px 40px;
+    *{
+      width: max-content;
+    }
   }
   .grabZone{
     display: flex;
@@ -40,8 +43,9 @@
     padding: var(--1m);
     z-index: 1;
     width: 100%;
+    overflow: hidden;
     .pillule{
-      cursor: grab;
+      position: relative;
       width: var(--10m);
       height: var(--1m);
       border-radius: 8px;

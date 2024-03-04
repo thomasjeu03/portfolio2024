@@ -38,7 +38,7 @@
   height: 20%;
   pointer-events: none;
   &--revert{
-    height: 80px;
+    height: 160px;
     inset: -1px -1px auto -1px;
     transform: rotate(180deg);
   }
@@ -222,9 +222,22 @@
   justify-content: flex-start;
 }
 .text-gradient{
-  background: linear-gradient(90deg, var(--secondary) 0%, var(--primary) 100%);
+  background: linear-gradient(125deg, var(--secondary) 0%, var(--primary) 50%, var(--secondary) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: shine 6s infinite linear;
+  animation-fill-mode: forwards;
+}
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 300px;
+  }
+  100% {
+    background-position: 300px;
+  }
 }
 .nowhitespace{
   white-space: nowrap;
