@@ -1,6 +1,7 @@
 import {memo} from "react";
 import { motion } from "framer-motion";
 import bg from '../../../assets/img/hero.png'
+import Widget from "./widget.jsx";
 
 const Hero = ({scrollTop}) => {
 
@@ -48,6 +49,15 @@ const Hero = ({scrollTop}) => {
                     bounce: 0.7
                 }}
                 className='titre4 black alignCenter' style={{ maxWidth: '700px' }}>Elevate <span className='gray-300'>your</span> brand <span className='gray-300'>with meticulously</span> crafted web experiences</motion.h3>
+            <Widget
+                rotateStart={-2}
+                rotateEnd={5}
+                delay={2}
+                top='30%'
+                left='75%'
+                title='Discover Me'
+                icon={true}
+            />
         </motion.div>
     )
 }
