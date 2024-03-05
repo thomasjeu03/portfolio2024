@@ -5,6 +5,7 @@ import Hero from "./components/hero.jsx";
 import { motion } from "framer-motion";
 import logo from "../../assets/img/icon/favicon.png";
 import GrabPile from "./components/grabPile.jsx";
+import TextGradient from "./components/TextGradient.jsx";
 
 function HomePage() {
     const [scrollTop, setScrollTop] = useState(0);
@@ -75,7 +76,7 @@ function HomePage() {
             <GrabPile scrollTop={scrollTop}/>
 
             <div className='dflexcolumn gap256 maxWidth1024' style={{ padding: '256px 16px' }}>
-                <h2 className='titre1 gray-200 w100 whitespace'>You have an <span className='white'>idea</span> to <span className='text-gradient'>highlight</span>, a new <span className='white'>web</span> <span className='white'>application</span> to design and develop, a <span className='white'>UX/UI</span> <span className='white'>system</span> to implement or just a <span className='white'>designer</span> <span className='white'>portfolio</span></h2>
+                <h2 className='titre1 gray-200 w100 whitespace'>You have an <span className='white'>idea</span> to <TextGradient text='highlight' />, a new <span className='white'>web</span> <span className='white'>application</span> to design and develop, a <span className='white'>UX/UI</span> <span className='white'>system</span> to implement or just a <span className='white'>designer</span> <span className='white'>portfolio</span></h2>
                 <h3 className='titre2 dflexrow w100 gap16 nowrap gray-200'>
                     <GalleryVerticalEnd size={48} className='gray-200'/>
                     Keep scrolling...

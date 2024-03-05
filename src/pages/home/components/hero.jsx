@@ -2,6 +2,7 @@ import {memo} from "react";
 import { motion } from "framer-motion";
 import bg from '../../../assets/img/hero.png'
 import Widget from "./widget.jsx";
+import TextGradient from "./TextGradient.jsx";
 
 const Hero = ({scrollTop}) => {
 
@@ -37,7 +38,7 @@ const Hero = ({scrollTop}) => {
                     type: "spring",
                     bounce: 0.7
                 }}
-                className='titre1 black alignCenter'>Unlock <span className='gray-300'>your</span> online <span className='text-gradient'>Potential</span></motion.h2>
+                className='titre1 black alignCenter'>Unlock <span className='gray-300'>your</span> online <TextGradient text='Potential' /></motion.h2>
             <motion.h3
                 initial={{ opacity: 0, rotate: 3, y: -30}}
                 animate={{ opacity: 1, rotate: 0, y: 0}}
