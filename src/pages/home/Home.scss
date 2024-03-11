@@ -52,4 +52,21 @@
       background: var(--white);
     }
   }
+  .pillule-wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: var(--2m);
+    .card{
+      width: auto;
+      padding: var(--2m) var(--3m);
+      .titre6{
+        text-align: center;
+        white-space: nowrap;
+      }
+    }
+  }
 }

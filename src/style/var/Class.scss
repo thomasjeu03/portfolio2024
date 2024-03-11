@@ -333,6 +333,23 @@
 .nowrap{
   flex-wrap: nowrap;
 }
+.card{
+  background: linear-gradient(var(--gray-400-lighter), var(--gray-500-lighter));
+  border-radius: var(--4m);
+  border: 1px solid var(--gray-400-lighter);
+  padding: var(--3m);
+  width: 100%;
+  backdrop-filter: blur(var(--3m));
+  -webkit-backdrop-filter: blur(var(--3m));
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--2m);
+  .titre6{
+    text-align: left;
+  }
+}
 .wrap{
   flex-wrap: wrap;
 }
