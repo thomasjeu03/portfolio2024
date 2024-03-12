@@ -1,6 +1,6 @@
 import './Home.scss';
 import {memo, useEffect, useState} from "react";
-import {GalleryVerticalEnd, Sparkles, Wand} from 'lucide-react';
+import {GalleryVerticalEnd, Sparkles, Wand, Check} from 'lucide-react';
 import Hero from "./components/hero.jsx";
 import { motion } from "framer-motion";
 import logo from "../../assets/img/icon/favicon.png";
@@ -20,6 +20,13 @@ function HomePage() {
         };
     }, []);
 
+    const handleScrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+
     return (
         <div className="HomePage">
             <motion.nav
@@ -33,7 +40,7 @@ function HomePage() {
                     bounce: 0.6
                 }}
                 className="maxWidth1400 dflexrow gapBetween p16">
-                <div className='dflexrow gap8 logo'>
+                <button type='button' className='dflexrow gap8 logo' onClick={handleScrollToTop }>
                     <img src={logo} alt="Thomas Jeu" height={40}/>
                     <motion.p
                         initial={{ opacity: 0, x: -15}}
@@ -46,7 +53,7 @@ function HomePage() {
                             bounce: 0.2
                         }}
                         className='title-font regular18'>Thomas Jeu</motion.p>
-                </div>
+                </button>
                 <motion.a
                     initial={{ rotate: 10 }}
                     animate={{ rotate: 0 }}
@@ -143,16 +150,108 @@ function HomePage() {
 
                 <section className='dflexcolumn w100 gap128'>
                     <h2>Choose <span className='gray-200'>your right</span> package</h2>
-                    <div className='dflexrow gap32 w100' style={{ alignItems: 'flex-start' }}>
-                        <div className='card'>
-                            <h3 className='titre6'>Book a Call</h3>
+                    <div className='dflexrow w100' style={{ alignItems: 'flex-start', flexDirection: 'row-reverse' }}>
+                        <div style={{ transform: 'rotate(5deg)' }} className='card'>
+                            <div className='w100 dflexrow gap8 gapBetween'>
+                                <h5 className='titre6 gray-300'>Retainer</h5>
+                            </div>
+                            <div className='dflexcolumn gap8 w100'>
+                                <h4 className='titre6'>Collaboration</h4>
+                                <h3 className='titre4 dflexrow gap4'>$2397 <span className='titre5 gray-100'>/mo</span></h3>
+                                <p className='regular16 gray-200'>Perfect for those who want an exterior view on a long-term project</p>
+                            </div>
+                            <hr/>
+                            <div className='dflexrow gap8 w100 nowrap'>
+                                <Check size={20} className='gray-200' />
+                                <p>SAAS application support</p>
+                            </div>
+                            <div className='dflexrow gap8 w100 nowrap'>
+                                <Check size={20} className='gray-200' />
+                                <p>Very high design system</p>
+                            </div>
+                            <div className='dflexrow gap8 w100 nowrap'>
+                                <Check size={20} className='gray-200' />
+                                <p>Implementation of front-end infrastructure</p>
+                            </div>
+                            <div className='dflexrow gap8 w100 nowrap'>
+                                <Check size={20} className='gray-200' />
+                                <p>Meet-up every weeks</p>
+                            </div>
+                            <div className='dflexrow gap8 w100 nowrap'>
+                                <Check size={20} className='gray-200' />
+                                <p>Fast & quality code base</p>
+                            </div>
+                            <a href='https://cal.com/thomas-jeu/cal-15' target='_blank' rel='noopener'
+                               className='CTA CTA--gray w100'
+                               style={{ paddingTop: 11, paddingBottom: 12}} >
+                                Get in touch
+                            </a>
                         </div>
-                        <div className='card'>
-                            <h3 className='titre6'>Choose a Package</h3>
+                        <div style={{ transform: 'rotate(-5deg)' }} className='card'>
+                            <div className='w100 dflexrow gap8 gapBetween'>
+                                <h5 className='titre6 gray-300'>One mission</h5>
+                                <span className='pillule'>Popular</span>
+                            </div>
+                            <div className='dflexcolumn gap8 w100'>
+                                <h4 className='titre6'>Design & Development</h4>
+                                <h3 className='titre4'>$1397</h3>
+                                <p className='regular16 gray-200'>Perfect for single, high-impact, conversion-focused landing page</p>
+                            </div>
+                            <hr/>
+                            <div className='dflexrow gap8 w100 nowrap'>
+                                <Check size={20} className='gray-200' />
+                                <p>Landing page or 3 pages max</p>
+                            </div>
+                            <div className='dflexrow gap8 w100 nowrap'>
+                                <Check size={20} className='gray-200' />
+                                <p>High design system</p>
+                            </div>
+                            <div className='dflexrow gap8 w100 nowrap'>
+                                <Check size={20} className='gray-200' />
+                                <p>Two feedbacks on design & development</p>
+                            </div>
+                            <div className='dflexrow gap8 w100 nowrap'>
+                                <Check size={20} className='gray-200' />
+                                <p>Updates delivered every 48 hours</p>
+                            </div>
+                            <div className='dflexrow gap8 w100 nowrap'>
+                                <Check size={20} className='gray-200' />
+                                <p>Fast & quality code base</p>
+                            </div>
+                            <a href='https://cal.com/thomas-jeu/cal-15' target='_blank' rel='noopener'
+                               className='CTA w100'
+                               style={{ paddingTop: 11, paddingBottom: 12}} >
+                                Get in touch
+                            </a>
                         </div>
                     </div>
                 </section>
             </div>
+
+            <footer className='dflexcolumn gap392 w100' style={{ padding: '128px 64px 64px 64px' }}>
+                <h3 className='titre1'>So, <span className='gray-200'>are</span> you in ?</h3>
+                <div className='dflexrow gap32'>
+                    <p className='gray-200'>© 2024 Thomas Jeu</p>
+                    <a href="https://www.instagram.com/thomasjeu" target='_blank' rel='noopener' className='hover-effect'>
+                        <div>
+                            <span className='gray-200'>Instagram</span>
+                            <span className='gray-200'>Instagram</span>
+                        </div>
+                    </a>
+                    <a href="https://twitter.com/ThomasJeu39" target='_blank' rel='noopener' className='hover-effect'>
+                        <div>
+                            <span className='gray-200'>X</span>
+                            <span className='gray-200'>X</span>
+                        </div>
+                    </a>
+                    <a href="https://bento.me/thomasjeu" target='_blank' rel='noopener' className='hover-effect'>
+                        <div>
+                            <span className='gray-200'>Bento</span>
+                            <span className='gray-200'>Bento</span>
+                        </div>
+                    </a>
+                </div>
+            </footer>
         </div>
     )
 }

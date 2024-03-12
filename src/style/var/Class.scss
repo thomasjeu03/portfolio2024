@@ -29,6 +29,16 @@
     font-size: 16px;
     gap: var(--05m);
   }
+  &--gray{
+    color: var(--black);
+    background: var(--white-light);
+    border: 1px solid var(--gray-100);
+    &:hover{
+      color: var(--white);
+      transition: .5s var(--smoothanimation);
+      background: var(--white-lighter);
+    }
+  }
 }
 .gradient-blur {
   position: fixed;
@@ -333,6 +343,14 @@
 .nowrap{
   flex-wrap: nowrap;
 }
+.pillule{
+  color: var(--secondary);
+  padding: 3px 10px 4px 10px;
+  border-radius: 13px;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid var(--secondary);
+}
 .card{
   background: linear-gradient(var(--gray-400-lighter), var(--gray-500-lighter));
   border-radius: var(--4m);
@@ -345,7 +363,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: var(--2m);
+  gap: var(--3m);
   .titre6{
     text-align: left;
   }
