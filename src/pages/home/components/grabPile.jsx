@@ -16,7 +16,7 @@ const GrabPile = ({scrollTop}) => {
             }}
             className="grabZone"
         >
-            <div style={{ width: `calc(80px - ${scrollTop * .08}px` }} className="pillule"></div>
+            <div style={{ width: `calc(80px - ${scrollTop * .08}px` }} className="fakeHandle"></div>
         </motion.div>
     )
 }
