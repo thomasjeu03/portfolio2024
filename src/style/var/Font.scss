@@ -10,10 +10,17 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'Editorial New';
+  src: url('../fonts/PPEditorialNew-UltralightItalic.otf') format('opentype');
+  font-style: normal;
+  font-display: swap;
+}
 
 :root{
   --title-font: 'Rebond Grotesque', sans-serif;
   --text-font: 'Neue Montreal' , sans-serif;
+  --serif-font: 'Editorial New' , serif;
   --font-size: 16px;
   @media only screen and (max-width: 900px){
     --font-size: 14px;
@@ -26,24 +33,28 @@
 .text-font{
   font-family: var(--text-font) !important;
 }
+.serif-font, .editorial-new{
+  font-family: var(--serif-font) !important;
+  letter-spacing: 1px;
+}
 .titre1, h1{
   font-size: var(--10m);
   line-height: normal;
   font-weight: 500;
-  font-family: var(--title-font);
+  font-family: var(--serif-font);
 }
 
 .titre2, h2{
   font-size: var(--7m);
   line-height: normal;
   font-weight: 500;
-  font-family: var(--title-font);
+  font-family: var(--serif-font);
 }
 .titre3, h3{
   font-size: var(--5m);
   line-height: normal;
   font-weight: 500;
-  font-family: var(--title-font);
+  font-family: var(--serif-font);
 }
 .titre4, h4{
   font-size: var(--4m);

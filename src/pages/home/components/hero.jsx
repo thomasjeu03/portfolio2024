@@ -55,7 +55,7 @@ const Hero = ({scrollTop}) => {
                 rotateEnd={5}
                 delay={2}
                 top='30%'
-                left='80%'
+                left='75%'
                 title='Discover Me'
                 icon={true}
                 onclick={() => window.scrollBy({

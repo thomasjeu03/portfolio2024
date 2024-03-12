@@ -52,7 +52,7 @@ function HomePage() {
                             type: "spring",
                             bounce: 0.2
                         }}
-                        className='title-font regular18'>Thomas Jeu</motion.p>
+                        className='serif-font regular18'>Thomas Jeu</motion.p>
                 </button>
                 <motion.a
                     initial={{ rotate: 10 }}
@@ -82,12 +82,12 @@ function HomePage() {
             <Hero scrollTop={scrollTop} />
             <GrabPile scrollTop={scrollTop}/>
             <div className='dflexcolumn gap256 maxWidth1024' style={{ padding: '256px 16px' }}>
-                <h2 className='titre1 gray-200 w100 whitespace'>You have an <span className='white'>idea</span> to <TextGradient text='highlight' />, a new <span className='white'>web</span> <span className='white'>application</span> to design and develop, a <span className='white'>UX/UI</span> <span className='white'>system</span> to implement or just a <span className='white'>designer</span> <span className='white'>portfolio</span></h2>
+                <h2 className='titre1 gray-200 w100 whitespace title-font'>You have some <span className='white'>ideas</span> to <TextGradient text='highlight' />, a new <span className='white'>web</span> <span className='white'>application</span> to design and develop, a <span className='white'>UX/UI</span> <span className='white'>system</span> to implement or just a <span className='white'>designer</span> <span className='white'>portfolio</span></h2>
                 <h3 className='titre2 dflexrow w100 gap16 nowrap gray-200'>
-                    <GalleryVerticalEnd size={48} className='gray-200'/>
+                    {/*<GalleryVerticalEnd size={48} className='gray-200'/>*/}
                     Keep scrolling...
                 </h3>
-                <h4 className='gray-200 alignRight w100'>And appreciate</h4>
+                <h4 className='gray-200 alignRight w100 serif-font'>And appreciate</h4>
                 <section className='dflexcolumn w100 gap128'>
                     <h2>Services <span className='gray-200'>I have</span> to offer</h2>
                     <ul className='pillule-wrap'>
@@ -157,7 +157,7 @@ function HomePage() {
                             </div>
                             <div className='dflexcolumn gap8 w100'>
                                 <h4 className='titre6'>Collaboration</h4>
-                                <h3 className='titre4 dflexrow gap4'>$2397 <span className='titre5 gray-100'>/mo</span></h3>
+                                <h3 className='titre4 dflexrow gap4 serif-font'>$2397 <span className='titre5 gray-100'>/mo</span></h3>
                                 <p className='regular16 gray-200'>Perfect for those who want an exterior view on a long-term project</p>
                             </div>
                             <hr/>
@@ -194,7 +194,7 @@ function HomePage() {
                             </div>
                             <div className='dflexcolumn gap8 w100'>
                                 <h4 className='titre6'>Design & Development</h4>
-                                <h3 className='titre4'>$1397</h3>
+                                <h3 className='titre4 serif-font'>$1397</h3>
                                 <p className='regular16 gray-200'>Perfect for single, high-impact, conversion-focused landing page</p>
                             </div>
                             <hr/>
