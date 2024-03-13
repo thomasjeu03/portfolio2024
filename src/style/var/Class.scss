@@ -343,6 +343,45 @@
 .nowrap{
   flex-wrap: nowrap;
 }
+.gradient-bg{
+  position: relative;
+  &:before, &:after{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 77vw;
+    min-width: 800px;
+    aspect-ratio: 14/9;
+    height: auto;
+    z-index: -1;
+    border-radius: 100%;
+    opacity: .2;
+    filter: blur(1000px);
+    transform: translate(-80%,-50%) rotate(45deg);
+    background: var(--primary);
+  }
+  &:after{
+    transform: translate(-20%,0%) rotate(-45deg);
+    background: var(--secondary);
+  }
+  &--left{
+    &:before{
+      transform: translate(-100%,0%) rotate(45deg);
+    }
+    &:after{
+      transform: translate(-100%,-50%) rotate(-45deg);
+    }
+  }
+  &--right{
+    &:before{
+      transform: translate(0%,-70%) rotate(45deg);
+    }
+    &:after{
+      transform: translate(0%,0%) rotate(-45deg);
+    }
+  }
+}
 .pillule{
   color: var(--secondary);
   padding: 3px 10px 4px 10px;
@@ -364,8 +403,15 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: var(--3m);
+  position: relative;
   .titre6{
     text-align: left;
+  }
+  .number{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-60%);
   }
 }
 .wrap{
