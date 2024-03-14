@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import logo from "../../assets/img/icon/favicon.png";
 import GrabPile from "./components/grabPile.jsx";
 import TextGradient from "./components/TextGradient.jsx";
+import Pomodoro from "./components/pomodoro.jsx";
 
 function HomePage() {
     const [scrollTop, setScrollTop] = useState(0);
@@ -227,29 +228,32 @@ function HomePage() {
                 </section>
             </div>
 
-            <footer className='dflexcolumn gap392 w100' style={{ padding: '128px 64px 64px 64px' }}>
+            <footer className='dflexcolumn gap360 w100' style={{ padding: '128px 64px 64px 64px' }}>
                 <h3 className='titre1'>So, <span className='gray-200'>are</span> you in ?</h3>
-                <div className='dflexrow gap32'>
-                    <p className='gray-200'>© 2024 Thomas Jeu</p>
-                    <a href="https://www.instagram.com/thomasjeu" target='_blank' rel='noopener' className='hover-effect'>
-                        <div>
-                            <span className='gray-200'>Instagram</span>
-                            <span className='gray-200'>Instagram</span>
-                        </div>
-                    </a>
-                    <a href="https://twitter.com/ThomasJeu39" target='_blank' rel='noopener' className='hover-effect'>
-                        <div>
-                            <span className='gray-200'>X</span>
-                            <span className='gray-200'>X</span>
-                        </div>
-                    </a>
-                    <a href="https://bento.me/thomasjeu" target='_blank' rel='noopener' className='hover-effect'>
-                        <div>
-                            <span className='gray-200'>Bento</span>
-                            <span className='gray-200'>Bento</span>
-                        </div>
-                    </a>
-                </div>
+               <div className='dflexrow gap32 gapBetween w100 wrap' style={{ alignItems: 'flex-end' }}>
+                   <div className='dflexrow gap32 wrap'>
+                       <p className='gray-200 nowhitespace'>© 2024 Thomas Jeu</p>
+                       <a href="https://www.instagram.com/thomasjeu" target='_blank' rel='noopener' className='hover-effect'>
+                           <div>
+                               <span className='gray-200'>Instagram</span>
+                               <span className='gray-200'>Instagram</span>
+                           </div>
+                       </a>
+                       <a href="https://twitter.com/ThomasJeu39" target='_blank' rel='noopener' className='hover-effect'>
+                           <div>
+                               <span className='gray-200'>X</span>
+                               <span className='gray-200'>X</span>
+                           </div>
+                       </a>
+                       <a href="https://bento.me/thomasjeu" target='_blank' rel='noopener' className='hover-effect'>
+                           <div>
+                               <span className='gray-200'>Bento</span>
+                               <span className='gray-200'>Bento</span>
+                           </div>
+                       </a>
+                   </div>
+                   <Pomodoro />
+               </div>
             </footer>
         </div>
     )
