@@ -82,7 +82,17 @@ function HomePage() {
             </div>
             <Hero scrollTop={scrollTop} />
             <GrabPile scrollTop={scrollTop}/>
-            <div id="container" className='dflexcolumn gap256 maxWidth1024'>
+            <motion.div
+                initial={{ opacity: 0, x: -180 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{
+                    duration: 2,
+                    ease: "easeOut",
+                    delay: 1.8,
+                    type: "spring",
+                    bounce: 0.6
+                }}
+                id="container" className='dflexcolumn gap256 maxWidth1024'>
                 <h2 className='titre1 gray-200 w100 whitespace title-font gradient-bg gradient-bg--right'>You have some <span className='white'>ideas</span> to <TextGradient text='highlight' />, a new <span className='white'>web</span> <span className='white'>application</span> to design and develop, a <span className='white'>UX/UI</span> <span className='white'>system</span> to implement or just a <span className='white'>designer</span> <span className='white'>portfolio</span></h2>
                 <h3 className='titre2 dflexrow w100 gap16 nowrap gray-200'>
                     {/*<GalleryVerticalEnd size={48} className='gray-200'/>*/}
@@ -226,7 +236,7 @@ function HomePage() {
                         </div>
                     </div>
                 </section>
-            </div>
+            </motion.div>
 
             <footer className='dflexcolumn gap360 w100'>
                 <h3 className='titre1'>So, <span className='gray-200'>are</span> you in ?</h3>
