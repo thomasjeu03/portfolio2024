@@ -14,7 +14,7 @@ const Hero = ({scrollTop}) => {
         } else {
             setMultiplicator(2)
         }
-    }, [scrollTop]);
+    }, [window.innerWidth]);
 
     return (
         <motion.div
