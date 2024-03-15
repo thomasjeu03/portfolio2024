@@ -20,13 +20,13 @@
     "short_name": "Thomas Jeu",
     "icons": [
         {
-            "src": "/img/icon/android-chrome-72x72.png",
-            "sizes": "72x72",
+            "src": "/img/icon/android-chrome-192x192.png",
+            "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/img/icon/favicon-160x160.png",
-            "sizes": "160x160",
+            "src": "/img/icon/android-chrome-512x512.png",
+            "sizes": "512x512",
             "type": "image/png"
         }
     ],
