@@ -1,6 +1,6 @@
 import {memo, useEffect, useState} from "react";
 import { motion } from "framer-motion";
-import bg from '../../../assets/img/hero.png'
+import bg from './../../../../public/img/hero.png'
 import Widget from "./widget.jsx";
 import TextGradient from "./TextGradient.jsx";
 

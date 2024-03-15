@@ -1,9 +1,9 @@
 import './Home.scss';
 import {memo, useEffect, useState} from "react";
-import {GalleryVerticalEnd, Sparkles, Wand, Check} from 'lucide-react';
+import { Sparkles, Wand, Check} from 'lucide-react';
 import Hero from "./components/hero.jsx";
 import { motion } from "framer-motion";
-import logo from "../../assets/img/icon/favicon.png";
+import logo from "./../../../public/img/icon/favicon.png";
 import GrabPile from "./components/grabPile.jsx";
 import TextGradient from "./components/TextGradient.jsx";
 import Pomodoro from "./components/pomodoro.jsx";
