@@ -1,10 +1,20 @@
-import {memo} from "react";
+import {memo, useEffect, useState} from "react";
 import { motion } from "framer-motion";
 import bg from '../../../assets/img/hero.png'
 import Widget from "./widget.jsx";
 import TextGradient from "./TextGradient.jsx";
 
 const Hero = ({scrollTop}) => {
+
+    const [multiplicator, setMultiplicator] = useState(2)
+
+    useEffect(() => {
+        if(window.innerWidth < 600) {
+            setMultiplicator(1)
+        } else {
+            setMultiplicator(2)
+        }
+    }, [scrollTop]);
 
     return (
         <motion.div
@@ -15,7 +25,7 @@ const Hero = ({scrollTop}) => {
                 ease: "easeOut",
                 delay: 0.1
             }}
-            className="hero" style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover', backgroundPosition: 'center', width: `calc(100vw - ${scrollTop * 2}px - 6px` }}>
+            className="hero" style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover', backgroundPosition: 'center', width: `calc(100vw - ${scrollTop * multiplicator}px - 6px` }}>
             <h1 className='sr-only'>Thomas Jeu creative web app developer</h1>
             <motion.h4
                 initial={{ opacity: 0, rotate: -3, y: -30}}
@@ -54,7 +64,7 @@ const Hero = ({scrollTop}) => {
                 rotateStart={-2}
                 rotateEnd={5}
                 delay={2}
-                top='30%'
+                bottom='20%'
                 left='75%'
                 title='Discover Me'
                 icon={true}

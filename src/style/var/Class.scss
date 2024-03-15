@@ -25,7 +25,7 @@
     background: linear-gradient(45deg, var(--secondary) 30%, var(--primary) 130%);
   }
   @media only screen and (max-width: 900px){
-    padding: 5px 16px 6px 16px;
+    padding: 5px 12px 6px 12px;
     font-size: 16px;
     gap: var(--05m);
   }
@@ -51,6 +51,15 @@
     height: 160px;
     inset: -1px -1px auto -1px;
     transform: rotate(180deg);
+    @media only screen and (max-width: 1100px){
+      height: 140px;
+    }
+    @media only screen and (max-width: 900px){
+      height: 120px;
+    }
+    @media only screen and (max-width: 600px){
+      height: 80px;
+    }
   }
 }
 .gradient-blur > div,
@@ -413,6 +422,16 @@
     left: 50%;
     transform: translate(-50%,-60%);
   }
+  @media only screen and (max-width: 900px){
+    border-radius: var(--3m);
+    padding: var(--2m);
+    gap: var(--2m);
+  }
+  @media only screen and (max-width: 600px){
+    border-radius: var(--2m);
+    padding: 12px;
+    gap: var(--1m);
+  }
 }
 .wrap{
   flex-wrap: wrap;
@@ -450,6 +469,15 @@
   }
   .gap#{$size}{
     gap: ($size+px);
+    @media only screen and (max-width: 900px){
+      gap: (calc($size/1.5)+px);
+    }
+    @media only screen and (max-width: 600px){
+      gap: (calc($size/1.7)+px);
+    }
+    @media only screen and (max-width: 400px){
+      gap: (calc($size/2)+px);
+    }
   }
   .maxWidth#{$size}{
     max-width: ($size+px);

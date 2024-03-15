@@ -82,14 +82,14 @@ function HomePage() {
             </div>
             <Hero scrollTop={scrollTop} />
             <GrabPile scrollTop={scrollTop}/>
-            <div className='dflexcolumn gap256 maxWidth1024' style={{ padding: '256px 16px' }}>
+            <div id="container" className='dflexcolumn gap256 maxWidth1024'>
                 <h2 className='titre1 gray-200 w100 whitespace title-font gradient-bg gradient-bg--right'>You have some <span className='white'>ideas</span> to <TextGradient text='highlight' />, a new <span className='white'>web</span> <span className='white'>application</span> to design and develop, a <span className='white'>UX/UI</span> <span className='white'>system</span> to implement or just a <span className='white'>designer</span> <span className='white'>portfolio</span></h2>
                 <h3 className='titre2 dflexrow w100 gap16 nowrap gray-200'>
                     {/*<GalleryVerticalEnd size={48} className='gray-200'/>*/}
                     Keep scrolling...
                 </h3>
                 <h4 className='gray-200 alignRight w100 serif-font'>And appreciate</h4>
-                <section className='dflexcolumn w100 gap128 gradient-bg gradient-bg--left'>
+                <section id='services' className='dflexcolumn w100 gap128 gradient-bg gradient-bg--left'>
                     <h2>Services <span className='gray-200'>I have</span> to offer</h2>
                     <ul className='pillule-wrap'>
                         <li className='card'><h3 className='titre6'>Landing page</h3></li>
@@ -124,7 +124,7 @@ function HomePage() {
                     </div>
                 </section>
 
-                <section className='dflexcolumn w100 gap128 gradient-bg'>
+                <section id='steps' className='dflexcolumn w100 gap128 gradient-bg'>
                     <div className='dflexcolumn w100 gap64'>
                         <h2>How does <span className='gray-200'>this</span> work ?</h2>
                         <p className='regular22 alignCenter w100'><span>Quick steps to go head swift</span></p>
@@ -148,7 +148,7 @@ function HomePage() {
                     </div>
                 </section>
 
-                <section className='dflexcolumn w100 gap128 gradient-bg gradient-bg--right'>
+                <section id='packages' className='dflexcolumn w100 gap128 gradient-bg gradient-bg--right'>
                     <h2>Choose <span className='gray-200'>your right</span> package</h2>
                     <div className='dflexrow w100' style={{ alignItems: 'flex-start', flexDirection: 'row-reverse' }}>
                         <div style={{ transform: 'rotate(5deg)' }} className='card'>
@@ -228,7 +228,7 @@ function HomePage() {
                 </section>
             </div>
 
-            <footer className='dflexcolumn gap360 w100' style={{ padding: '128px 64px 64px 64px' }}>
+            <footer className='dflexcolumn gap360 w100'>
                 <h3 className='titre1'>So, <span className='gray-200'>are</span> you in ?</h3>
                <div className='dflexrow gap32 gapBetween w100 wrap' style={{ alignItems: 'flex-end' }}>
                    <div className='dflexrow gap32 wrap'>
