@@ -131,6 +131,21 @@
     }
   }
 }
+.projects{
+  .projectImg{
+    height: 300px;
+    border-radius: var(--2m);
+    filter: grayscale(1);
+    transition: .5s var(--smoothanimation);
+    &:hover{
+      filter: grayscale(0);
+      transition: .5s var(--smoothanimation);
+    }
+    @media only screen and (max-width: 550px){
+      height: 180px;
+    }
+  }
+}
 footer{
   padding: 128px 64px 64px 64px;
   @media only screen and (max-width: 900px){
