@@ -12,6 +12,8 @@ import Projects from "./components/Projects.jsx";
 function HomePage() {
     const [scrollTop, setScrollTop] = useState(0);
 
+    const thisYear = new Date().getFullYear();
+
     useEffect(() => {
         const handleScroll = () => {
             setScrollTop(window.pageYOffset);
@@ -276,7 +278,7 @@ function HomePage() {
                     <h3 className='titre1'>So, <span className='gray-200'>are</span> you in ?</h3>
                     <div className='dflexrow gap32 gapBetween w100 wrap' style={{alignItems: 'flex-end'}}>
                         <div className='dflexrow gap32 wrap'>
-                            <p className='gray-200 nowhitespace'>© 2024 Thomas Jeu</p>
+                            <p className='gray-200 nowhitespace'>© {thisYear} Thomas Jeu</p>
                             <a href="https://www.instagram.com/thomasjeu" target='_blank' rel='noopener'
                                className='hover-effect'>
                                 <div>
