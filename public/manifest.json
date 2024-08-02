@@ -2,6 +2,8 @@
     "background_color": "#0E0E12 ",
     "categories": [
         "webapp",
+        "Besançon",
+        "Besancon",
         "productivity",
         "design",
         "development",
@@ -14,7 +16,7 @@
     ],
     "id": "/?source=pwa",
     "start_url": "/?source=pwa",
-    "description": "Unlock your online potential. I’m Thomas Jeu, next gen creative web app developer. Elevate your brand with meticulously crafted web experiences",
+    "description": "I’m Thomas Jeu, next gen creative web app developer near Besançon. Elevate your brand with meticulously crafted web experiences",
     "scope": "./",
     "name": "Thomas Jeu",
     "short_name": "Thomas Jeu",

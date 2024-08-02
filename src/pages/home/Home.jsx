@@ -286,6 +286,13 @@ function HomePage() {
                                     <span className='gray-200'>Instagram</span>
                                 </div>
                             </a>
+                            <a href="https://github.com/thomasjeu03" target='_blank' rel='noopener'
+                               className='hover-effect'>
+                                <div>
+                                    <span className='gray-200'>Github</span>
+                                    <span className='gray-200'>Github</span>
+                                </div>
+                            </a>
                             <a href="https://twitter.com/ThomasJeu39" target='_blank' rel='noopener'
                                className='hover-effect'>
                                 <div>

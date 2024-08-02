@@ -18,7 +18,7 @@ const Pomodoro = () => {
 
     return (
         <div className='dflexcolumn gap16' style={{ alignItems: 'flex-end' }}>
-            <p className='gray-300 regular14'>Current time in Europe/Paris</p>
+            <p className='gray-300 regular14'>Current time at Besançon (FR)</p>
             <h3 className='gray-300'>{formattedTime}</h3>
         </div>
     );
