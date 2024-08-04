@@ -109,7 +109,7 @@ function HomePage() {
                 <h4 className='gray-200 alignRight w100 serif-font'>And appreciate</h4>
             </motion.div>
 
-            <Projects scrollTop={scrollTop}/>
+            <Projects />
 
             <motion.div
                 initial={{opacity: 0, x: -180}}

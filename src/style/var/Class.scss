@@ -15,11 +15,14 @@
   color: var(--white);
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
-  outline: none;
   background: linear-gradient(45deg, var(--secondary), var(--primary));
   border: 1px solid var(--white-light);
   transition: .5s var(--smoothanimation);
-  &:hover{
+  outline: 2px solid rgba(var(--secondary-rgb), 0);
+  outline-offset: 0;
+  &:hover, &:focus{
+    outline: 2px solid var(--secondary-light);
+    outline-offset: 4px;
     color: var(--white);
     transition: .5s var(--smoothanimation);
     background: linear-gradient(45deg, var(--secondary) 30%, var(--primary) 130%);
@@ -33,10 +36,11 @@
     color: var(--black);
     background: var(--white-light);
     border: 1px solid var(--gray-100);
-    &:hover{
+    &:hover, &:focus{
       color: var(--white);
       transition: .5s var(--smoothanimation);
       background: var(--white-lighter);
+      outline: 2px solid var(--gray-300);
     }
   }
 }
@@ -176,8 +180,8 @@
   z-index: 1;
   cursor: pointer;
   position: absolute;
-  backdrop-filter: blur(var(--2m));
-  -webkit-backdrop-filter: blur(var(--2m));
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   background: linear-gradient(180deg, rgba(var(--gray-300-rgb), 0.18), rgba(var(--gray-100-rgb), 0.18));
   border: 1px solid var(--white);
   svg{
@@ -413,8 +417,8 @@
   border: 1px solid var(--gray-400-lighter);
   padding: var(--3m);
   width: 100%;
-  backdrop-filter: blur(var(--3m));
-  -webkit-backdrop-filter: blur(var(--3m));
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
   display: flex;
   flex-direction: column;
   align-items: flex-start;

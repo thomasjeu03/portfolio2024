@@ -3,27 +3,7 @@ import { motion } from "framer-motion";
 import baseURL from "../../../config.js";
 import axios from "axios";
 
-const Projects = ({scrollTop}) => {
-    const projectsSection = useRef();
-    const [distanceFromTop, setDistanceFromTop] = useState(0);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            if (projectsSection.current) {
-                const distance = projectsSection.current.offsetTop;
-                setDistanceFromTop(scrollTop - distance + window.innerHeight - 300);
-            }
-        };
-
-        handleScroll();
-
-        window.addEventListener("scroll", handleScroll);
-
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, [scrollTop]);
-
+const Projects = () => {
     const [projects, setProjects] = useState([]);
     useEffect(() => {
         const fetchProjects = async () => {
@@ -52,9 +32,9 @@ const Projects = ({scrollTop}) => {
             className="projects dflexcolumn gap256 maxWidth1024 w100"
             style={{ paddingLeft: 16, paddingRight: 16 }}
         >
-            <section className='dflexcolumn w100 gap128' ref={projectsSection}>
+            <section className='dflexcolumn w100 gap128'>
                 <h2>Recents works</h2>
-                    <div className='dflexrow gap32 w100' style={{ transform: 'translateX(-' + distanceFromTop + 'px)'}}>
+                    <div className='gap32 w100'>
                         {projects && projects.map((project, index) => (
                             <a
                                 key={index}

@@ -132,17 +132,33 @@
   }
 }
 .projects{
+  section{
+    div{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
   .projectImg{
-    height: 300px;
+    height: auto;
+    width: 100%;
     border-radius: var(--2m);
     filter: grayscale(1);
     transition: .5s var(--smoothanimation);
-    &:hover{
+    outline: 2px solid rgba(var(--secondary-rgb), 0);
+    outline-offset: 0;
+    @media only screen and (max-width: 500px){
+      border-radius: var(--1m);
+    }
+    img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    &:hover, &:focus{
       filter: grayscale(0);
       transition: .5s var(--smoothanimation);
-    }
-    @media only screen and (max-width: 550px){
-      height: 180px;
+      outline: 2px solid var(--secondary-light);
+      outline-offset: 4px;
     }
   }
 }
