@@ -40,10 +40,16 @@
       .widget{
         display: none !important;
       }
+      .widgetNoImg{
+        width: 80px !important;
+      }
     }
     @media only screen and (max-width: 600px){
       h3, h4{
         max-width: 400px !important;
+      }
+      .widgetNoImg{
+        width: 60px !important;
       }
     }
     @media only screen and (max-width: 400px){

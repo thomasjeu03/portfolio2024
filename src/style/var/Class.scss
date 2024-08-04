@@ -184,6 +184,7 @@
   -webkit-backdrop-filter: blur(16px);
   background: linear-gradient(180deg, rgba(var(--gray-300-rgb), 0.18), rgba(var(--gray-100-rgb), 0.18));
   border: 1px solid var(--white);
+  box-shadow: 0 2px 3px var(--black-lighter);
   svg{
     transition: 0.5s var(--smoothanimation);
     transform: rotate(0deg);
@@ -197,6 +198,19 @@
       margin-left: var(--2m);
       transform: rotate(15deg);
     }
+  }
+}
+.widgetNoImg{
+  width: 100px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  z-index: 1;
+  position: absolute;
+  img{
+    filter: drop-shadow(0 2px 3px var(--black-lighter));
   }
 }
 .hover-effect{

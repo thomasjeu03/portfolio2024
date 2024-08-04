@@ -2,7 +2,7 @@ import {memo} from "react";
 import { motion } from "framer-motion";
 import {CornerDownRight} from "lucide-react";
 
-const Widget = ({icon, title, onclick, rotateStart, rotateEnd, delay, top, left, right, bottom}) => {
+const Widget = ({icon, title, onclick, rotateStart, rotateEnd, delay, top, left, right, bottom, img}) => {
 
     return (
         <motion.div
@@ -15,10 +15,11 @@ const Widget = ({icon, title, onclick, rotateStart, rotateEnd, delay, top, left,
                 type: "spring",
                 bounce: 0.35
             }}
-            className="widget"
+            className={img ? 'widgetNoImg' : "widget"}
             onClick={onclick}
         >
-            <h5 className='black'>{title}</h5>
+            {img && <img style={{ width: '100%', height: '100%' }} src={img} alt={title ? title : ''} />}
+            {title && (<h5 className='black'>{title}</h5>)}
             {icon && <CornerDownRight className='black' size={24} />}
         </motion.div>
     )

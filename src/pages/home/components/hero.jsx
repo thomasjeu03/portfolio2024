@@ -1,6 +1,9 @@
 import {memo, useEffect, useState} from "react";
 import { motion } from "framer-motion";
 import bg from './../../../../public/img/hero.png'
+import imageWidget1 from './../../../../public/img/illustrations/code.png'
+import imageWidget2 from './../../../../public/img/illustrations/me.png'
+import imageWidget3 from './../../../../public/img/illustrations/radar.png'
 import Widget from "./widget.jsx";
 import TextGradient from "./TextGradient.jsx";
 
@@ -61,7 +64,7 @@ const Hero = ({scrollTop}) => {
                 }}
                 className='titre4 black alignCenter' style={{ maxWidth: '700px' }}>Elevate <span className='gray-300'>your</span> brand <span className='gray-300'>with meticulously</span> crafted web experiences</motion.h3>
             <Widget
-                rotateStart={-2}
+                rotateStart={-80}
                 rotateEnd={5}
                 delay={2}
                 bottom='20%'
@@ -72,6 +75,33 @@ const Hero = ({scrollTop}) => {
                     top: window.innerHeight*0.85,
                     behavior: 'smooth'
                 })}
+            />
+            <Widget
+                rotateStart={80}
+                rotateEnd={-5}
+                delay={1.5}
+                img={imageWidget1}
+                top='20%'
+                right='75%'
+                icon={false}
+            />
+            <Widget
+                rotateStart={-60}
+                rotateEnd={5}
+                delay={1.75}
+                img={imageWidget2}
+                bottom='30%'
+                right='70%'
+                icon={false}
+            />
+            <Widget
+                rotateStart={3000}
+                rotateEnd={-5}
+                delay={1.25}
+                img={imageWidget3}
+                top='20%'
+                left='80%'
+                icon={false}
             />
         </motion.div>
     )

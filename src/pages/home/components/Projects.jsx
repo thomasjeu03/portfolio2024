@@ -45,7 +45,7 @@ const Projects = () => {
                             >
                                 <img
                                     className='projectImg'
-                                    src={project?.acf?.image.sizes.large}
+                                    src={project?.acf?.image.sizes.medium_large}
                                     alt={project?.acf?.name}
                                 />
                             </a>
