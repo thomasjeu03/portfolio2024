@@ -95,7 +95,7 @@ const Hero = ({scrollTop}) => {
                 icon={false}
             />
             <Widget
-                rotateStart={3000}
+                rotateStart={800}
                 rotateEnd={-5}
                 delay={1.25}
                 img={imageWidget3}
