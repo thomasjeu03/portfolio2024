@@ -200,7 +200,7 @@
     }
   }
 }
-.widgetNoImg{
+.widgetImg{
   width: 100px !important;
   display: flex;
   flex-direction: column;
@@ -209,6 +209,7 @@
   height: fit-content;
   z-index: 1;
   position: absolute;
+  pointer-events: none;
   img{
     filter: drop-shadow(0 2px 3px var(--black-lighter));
   }

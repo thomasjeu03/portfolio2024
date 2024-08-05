@@ -15,7 +15,7 @@ const Widget = ({icon, title, onclick, rotateStart, rotateEnd, delay, top, left,
                 type: "spring",
                 bounce: 0.35
             }}
-            className={img ? 'widgetNoImg' : "widget"}
+            className={img ? 'widgetImg' : "widget"}
             onClick={onclick}
         >
             {img && <img style={{ width: '100%', height: '100%' }} src={img} alt={title ? title : ''} />}
