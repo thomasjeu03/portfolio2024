@@ -40,7 +40,9 @@ const Hero = ({scrollTop}) => {
                     type: "spring",
                     bounce: 0.7
                 }}
-                className='titre6 gray-300 alignCenter'>I’m Thomas, next gen creative web app developer</motion.h4>
+                className='titre6 gray-300 alignCenter dflexcolumn gap16' style={{ alignItems: 'center' }}>
+                <div className="pillule pillule--available">Available for Work</div>
+            </motion.h4>
             <motion.h2
                 initial={{ opacity: 0, rotate: -3, y: -30}}
                 animate={{ opacity: 1, rotate: 0, y: 0}}
@@ -62,7 +64,7 @@ const Hero = ({scrollTop}) => {
                     type: "spring",
                     bounce: 0.7
                 }}
-                className='titre4 black alignCenter' style={{ maxWidth: '700px' }}>Elevate <span className='gray-300'>your</span> brand <span className='gray-300'>with meticulously</span> crafted web experiences</motion.h3>
+                className='titre5 black alignCenter' style={{ maxWidth: '700px' }}>I’m Thomas, next gen creative web app developer</motion.h3>
             <Widget
                 rotateStart={-80}
                 rotateEnd={5}
