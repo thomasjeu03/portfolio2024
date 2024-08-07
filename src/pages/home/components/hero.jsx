@@ -72,6 +72,7 @@ const Hero = ({scrollTop}) => {
                 bottom='20%'
                 left='75%'
                 title='Discover Me'
+                img={false}
                 icon={true}
                 onclick={() => window.scrollBy({
                     top: window.innerHeight*0.85,
