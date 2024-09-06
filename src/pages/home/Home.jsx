@@ -293,7 +293,7 @@ function HomePage() {
                                     <span className='gray-200'>Github</span>
                                 </div>
                             </a>
-                            <a href="https://twitter.com/ThomasJeu39" target='_blank' rel='noopener'
+                            <a href="https://x.com/intent/follow?screen_name=ThomasJeu39" target='_blank' rel='noopener'
                                className='hover-effect'>
                                 <div>
                                     <span className='gray-200'>X</span>
