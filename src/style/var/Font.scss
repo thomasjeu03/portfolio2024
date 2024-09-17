@@ -16,11 +16,17 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'Tartuffo';
+  src: url('../fonts/Tartuffo_LightItalic.otf') format('opentype');
+  font-style: normal;
+  font-display: swap;
+}
 
 :root{
   --title-font: 'Rebond Grotesque', sans-serif;
   --text-font: 'Neue Montreal' , sans-serif;
-  --serif-font: 'Editorial New' , serif;
+  --serif-font: 'Tartuffo' , serif;
   --font-size: 16px;
   @media only screen and (max-width: 900px){
     --font-size: 14px;
