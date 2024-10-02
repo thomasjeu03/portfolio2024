@@ -6,7 +6,7 @@
   width: 100%;
   nav{
     position: fixed;
-    top: 0;
+    top: env(safe-area-inset-bottom);
     margin: auto;
     width: 100%;
     z-index: 1000;
