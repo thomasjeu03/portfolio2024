@@ -133,7 +133,7 @@ function HomePage() {
                         <li className='card'><h3 className='titre6'>Design system</h3></li>
                         <li className='card'><h3 className='titre6'>Web site</h3></li>
                         <li className='card'><h3 className='titre6'>Mobile app design</h3></li>
-                        <li className='card'><h3 className='titre6'>Web identity</h3></li>
+                        <li className='card'><h3 className='titre6'>iOS App</h3></li>
                     </ul>
                     <div className='dflexrow gap32 w100' style={{alignItems: 'flex-start'}}>
                         <div className='dflexcolumn gap40 w100'>
