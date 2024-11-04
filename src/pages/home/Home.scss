@@ -152,6 +152,15 @@
     transition: .5s var(--smoothanimation);
     outline: 2px solid rgba(var(--secondary-rgb), 0);
     outline-offset: 0;
+    --shadow: var(--gray-500-rgb);
+    box-shadow: -3px 3px 1.7px -0.625px rgba(var(--shadow), 0.15),
+    -7px 7px 4px -1.25px rgba(var(--shadow), 0.14403),
+    -13px 13px 7.4px -1.875px rgba(var(--shadow), 0.13911),
+    -21.7px 21.7px 12.3px -2.5px rgba(var(--shadow), 0.13189),
+    -35px 35px 19.8px -3.125px rgba(var(--shadow), 0.12076),
+    -57.4px 57.4px 32.5px -3.75px rgba(var(--shadow), 0.10213),
+    -98.9px 98.9px 55.9px -4.375px rgba(var(--shadow), 0.06757),
+    -180px 180px 101.82px -5px rgba(var(--shadow), 0);
     @media only screen and (max-width: 500px){
       border-radius: var(--1m);
     }
@@ -161,6 +170,7 @@
       object-fit: cover;
     }
     &:hover, &:focus{
+      --shadow: 80,0,145;
       filter: grayscale(0);
       transition: .5s var(--smoothanimation);
       outline: 2px solid var(--secondary-light);
