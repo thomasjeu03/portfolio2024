@@ -1,18 +1,17 @@
 {
     "background_color": "#0E0E12 ",
     "categories": [
-        "webapp",
+        "web app",
         "Besançon",
+        "freelance",
         "Besancon",
-        "productivity",
         "design",
         "development",
         "SaaS",
-        "web",
         "Landing page",
         "portoflio",
         "Thomas Jeu",
-        "design system"
+        "iOS app"
     ],
     "id": "/?source=pwa",
     "start_url": "/?source=pwa",
