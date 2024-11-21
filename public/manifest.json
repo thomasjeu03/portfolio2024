@@ -29,6 +29,11 @@
             "src": "/img/icon/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
+        },
+        {
+          "src": "/img/icon/apple-touch-icon-dark.png",
+          "sizes": "1024x1024",
+          "type": "image/png"
         }
     ],
     "theme_color": "#0E0E12",
