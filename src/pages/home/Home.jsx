@@ -84,6 +84,7 @@ function HomePage() {
                 <div></div>
                 <div></div>
             </div>
+
             <Hero scrollTop={scrollTop}/>
             <GrabPile scrollTop={scrollTop}/>
             <motion.div
