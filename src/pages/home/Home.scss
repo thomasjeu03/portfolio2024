@@ -148,7 +148,6 @@
     height: auto;
     width: 100%;
     border-radius: var(--2m);
-    filter: grayscale(1);
     transition: .5s var(--smoothanimation);
     outline: 2px solid rgba(var(--secondary-rgb), 0);
     outline-offset: 0;
@@ -171,7 +170,6 @@
     }
     &:hover, &:focus{
       --shadow: 80,0,145;
-      filter: grayscale(0);
       transition: .5s var(--smoothanimation);
       outline: 2px solid var(--secondary-light);
       outline-offset: 4px;
