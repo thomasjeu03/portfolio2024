@@ -71,7 +71,7 @@ const Hero = ({scrollTop}) => {
                 delay={2}
                 bottom='20%'
                 left='75%'
-                title='En savoir plus'
+                title='En voir plus'
                 img={false}
                 icon={true}
                 onclick={() => window.scrollBy({
