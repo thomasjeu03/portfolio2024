@@ -29,7 +29,7 @@ const Hero = ({scrollTop}) => {
                 delay: 0.1
             }}
             className="hero" style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover', backgroundPosition: 'center', width: `calc(100vw - ${scrollTop * multiplicator}px - 6px` }}>
-            <h1 className='sr-only'>Thomas Jeu - Creative web app developer near Besançon</h1>
+            <h1 className='sr-only'>Thomas Jeu - Développeur web créatif à Besançon</h1>
             <motion.h4
                 initial={{ opacity: 0, rotate: -3, y: -30}}
                 animate={{ opacity: 1, rotate: 0, y: 0}}
@@ -41,7 +41,7 @@ const Hero = ({scrollTop}) => {
                     bounce: 0.7
                 }}
                 className='titre6 gray-300 alignCenter dflexcolumn gap16' style={{ alignItems: 'center' }}>
-                <div className="pillule pillule--available">Available for Work</div>
+                <div className="pillule pillule--available">Disponible pour vos projets</div>
             </motion.h4>
             <motion.h2
                 initial={{ opacity: 0, rotate: -3, y: -30}}
@@ -53,7 +53,7 @@ const Hero = ({scrollTop}) => {
                     type: "spring",
                     bounce: 0.7
                 }}
-                className='titre1 black alignCenter'>Unlock <span className='gray-300'>your</span> online <TextGradient text='Potential' /></motion.h2>
+                className='titre1 black alignCenter'>Débloquez <span className='gray-300'>votre</span> <TextGradient text='potential' /> en ligne</motion.h2>
             <motion.h3
                 initial={{ opacity: 0, rotate: 3, y: -30}}
                 animate={{ opacity: 1, rotate: 0, y: 0}}
@@ -64,14 +64,14 @@ const Hero = ({scrollTop}) => {
                     type: "spring",
                     bounce: 0.7
                 }}
-                className='titre5 black alignCenter' style={{ maxWidth: '700px' }}>I’m Thomas, next gen creative web app developer</motion.h3>
+                className='titre5 black alignCenter' style={{ maxWidth: '700px' }}>Je m'appelle Thomas, développeur web créatif.</motion.h3>
             <Widget
                 rotateStart={-80}
                 rotateEnd={5}
                 delay={2}
                 bottom='20%'
                 left='75%'
-                title='Discover Me'
+                title='En savoir plus'
                 img={false}
                 icon={true}
                 onclick={() => window.scrollBy({

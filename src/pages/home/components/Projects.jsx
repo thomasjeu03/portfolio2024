@@ -33,7 +33,7 @@ const Projects = () => {
             style={{ paddingLeft: 16, paddingRight: 16 }}
         >
             <section className='dflexcolumn w100 gap128'>
-                <h2>Recents works</h2>
+                <h2>Projets récents</h2>
                     <div className='gap32 w100'>
                         {projects && projects.map((project, index) => (
                             <a
