@@ -100,12 +100,8 @@ function HomePage() {
                 id="container" className='dflexcolumn gap256 maxWidth1024'>
                 <h2 className='titre1 gray-200 w100 whitespace title-font gradient-bg gradient-bg--right'>
                     Vous avez des <span className='white'>idées</span> à <TextGradient text='mettre en valeur'/>, une
-                    nouvelle
-                    <span className='white'>application</span> <span className='white'>web</span> à concevoir et
-                    développer,
-                    un <span className='white'>système</span> <span className='white'>UX/UI</span> à implémenter ou
-                    simplement
-                    un <span className='white'>portfolio</span> de <span className='white'>designer</span>
+                    nouvelle <span className='white'>application</span> <span className='white'>web</span> à concevoir et
+                    développer, un <span className='white'>système</span> <span className='white'>UX/UI</span> à implémenter ou simplement un <span className='white'>portfolio</span> de <span className='white'>designer</span>
                 </h2>
                 <h3 className='titre2 dflexrow w100 gap16 nowrap gray-200'>
                     {/*<GalleryVerticalEnd size={48} className='gray-200'/>*/}
