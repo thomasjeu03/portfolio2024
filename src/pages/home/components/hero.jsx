@@ -29,7 +29,7 @@ const Hero = ({scrollTop}) => {
                 delay: 0.1
             }}
             className="hero" style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover', backgroundPosition: 'center', width: `calc(100vw - ${scrollTop * multiplicator}px - 6px` }}>
-            <h1 className='sr-only'>Thomas Jeu - Développeur web créatif à Besançon</h1>
+            <h1 className='sr-only'>Thomas Jeu - Développeur web créatif à Hamilton (NZ)</h1>
             <motion.h4
                 initial={{ opacity: 0, rotate: -3, y: -30}}
                 animate={{ opacity: 1, rotate: 0, y: 0}}
