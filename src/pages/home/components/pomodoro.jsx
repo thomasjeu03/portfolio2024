@@ -13,7 +13,7 @@ const Pomodoro = () => {
 
     const formattedTime = time.toLocaleTimeString('en-US', {
         hour12: false,
-        timeZone: 'Pacific/Aukland',
+        timeZone: 'Pacific/Auckland',
     });
 
     return (
