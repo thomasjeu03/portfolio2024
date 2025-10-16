@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import logo from "./../../../public/img/icon/favicon.png";
 import GrabPile from "./components/grabPile.jsx";
 import TextGradient from "./components/TextGradient.jsx";
-import Pomodoro from "./components/pomodoro.jsx";
 import Projects from "./components/Projects.jsx";
 
 function HomePage() {
@@ -308,7 +307,6 @@ function HomePage() {
                             </div>
                         </a>
                     </div>
-                    <Pomodoro/>
                 </div>
             </footer>
         </div>
